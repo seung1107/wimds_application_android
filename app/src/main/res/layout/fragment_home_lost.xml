@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This is the fragment  to be displayed for a section associated with a tab -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:id="@+id/circle_blue"
+        android:src ="@drawable/circle_red_2"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=""
+        android:id="@+id/valueRssi"
+        android:layout_below="@+id/circle_blue"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        style="@android:style/Widget.DeviceDefault.Light.Button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="미아 신고"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:id="@+id/btn_notify"
+        android:onClick="btnNotifyClicked"
+        android:visibility="gone"
+        android:layout_above="@+id/btn_cancel"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="@android:style/Widget.DeviceDefault.Light.Button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="신고 취소"
+        android:textSize="20dp"
+        android:id="@+id/btn_cancel"
+        android:onClick="btnCancelClicked"
+        android:visibility="visible"
+        android:layout_above="@+id/btn_found"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="@android:style/Widget.DeviceDefault.Light.Button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="미아 찾음"
+        android:textSize="20dp"
+        android:id="@+id/btn_found"
+        android:onClick="btnFoundClicked"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/currentDevice"
+        android:layout_below="@+id/btn_notify"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="128dp" />
+
+
+</RelativeLayout>

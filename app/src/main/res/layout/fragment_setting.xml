@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This is the fragment  to be displayed for a section associated with a tab -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        style="@android:style/Widget.DeviceDefault.Light.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="디바이스 수정"
+        android:paddingBottom="30dp"
+        android:paddingTop="30dp"
+        android:textStyle="bold"
+        android:id="@+id/device_modify"
+        android:textSize="50dp"
+        android:gravity="center"
+        android:onClick="deviceModifyClicked"
+        android:layout_weight="0.50" />
+
+
+
+    <TextView
+        style="@android:style/Widget.DeviceDefault.Light.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="디바이스 삭제"
+        android:paddingBottom="30dp"
+        android:paddingTop="30dp"
+        android:textStyle="bold"
+        android:id="@+id/device_delete"
+        android:textSize="50dp"
+        android:gravity="center"
+        android:onClick="deviceDeleteClicked"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_weight="0.50" />
+</LinearLayout>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="activities.FragmentActivity"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+
+
+    <!--//s_number 핸드폰 번호-->
+    <!--//안드로이드 고유 번호-->
+    <!--//성별    c_gender-->
+    <!--//아이이름 c_name-->
+    <!--//비고 : c_etc-->
+    <!--//b_mac_id-->
+    <!--//b_name-->
+    <!--//s_id : 안드로이드 고유 번호-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="등록 페이지"
+        android:gravity="center"
+        android:layout_marginBottom="30dp"
+        />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        >
+
+        <!--기기이름!!!-->
+        <TextView
+            android:id="@+id/s_name_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="기기 이름: "
+            android:textSize="18dp"
+            android:paddingTop="8dp"
+            />
+
+        <EditText
+            android:id="@+id/s_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@id/s_name_label"
+            />
+
+        <!--아이이름!!!-->
+        <TextView
+            android:id="@+id/c_name_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="아이 이름: "
+            android:textSize="18dp"
+            android:paddingTop="24dp"
+            android:layout_below="@+id/s_name_label"/>
+
+        <EditText
+            android:id="@+id/c_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_below="@+id/s_name"
+            android:layout_toRightOf="@id/c_name_label"
+       />
+
+        <TextView
+            android:id="@+id/c_etc_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="기타 내용: "
+            android:textSize="18dp"
+            android:paddingTop="22dp"
+            android:layout_below="@+id/c_name_label"/>
+
+        <EditText
+            android:id="@+id/c_etc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@id/c_etc_label"
+            android:layout_below="@+id/c_name"
+
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/c_gender_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="성별: "
+            android:textSize="18dp"
+            android:paddingTop="5dp"
+            />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/gender_checked"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/gender_boy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="남자"/>
+
+            <RadioButton
+                android:id="@+id/gender_girl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="여자"/>
+
+        </RadioGroup>
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+
+        >
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="등록"
+            android:id="@+id/register_button"
+            android:textSize="20dp"
+            android:onClick="onClick"/>
+
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/cancel_button"
+            android:text="취소"
+            android:textSize="20dp"
+            android:onClick="onClick"/>
+    </LinearLayout>
+
+
+</LinearLayout>

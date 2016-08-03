@@ -1,0 +1,35 @@
+{
+  "project_info": {
+    "project_number": "11015270171",
+    "project_id": "wimds-55e15"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:11015270171:android:37462169e6524253",
+        "android_client_info": {
+          "package_name": "com.wimds.wimds"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAf20QYBtdnF7aRmV3wGN7nbKo6QTC1e-U"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

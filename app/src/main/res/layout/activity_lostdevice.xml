@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/primary"
+    >
+
+
+    <ListView
+        android:id="@+id/lost_device_list"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        />
+
+
+
+    <Button android:id="@+id/cancel_lost_device_list"
+        android:layout_width="match_parent"
+        android:onClick="cancel_lost_device_list"
+        android:text="나가기"
+        android:background="@color/primary_dark"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

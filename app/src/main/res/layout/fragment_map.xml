@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:nestedScrollingEnabled="false">
+
+    <Button
+        style="@android:style/Widget.DeviceDefault.Light.Button"
+        android:layout_width="90pt"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="내 아이 보기"
+        android:textSize="20dp"
+        android:id="@+id/btnMyChild"
+        android:onClick="btnMyChildClicked"
+        android:layout_gravity="left|top"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"/>
+
+    <Button
+        style="@android:style/Widget.DeviceDefault.Light.Button"
+        android:layout_width="90pt"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="주변 미아 찾기"
+        android:textSize="20dp"
+        android:layout_gravity="right|top"
+        android:id="@+id/btnLostChildren"
+        android:onClick="btnLostChildrenClicked"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.wimds.wimds.activities.Fragment_map"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_gravity="center"
+        android:layout_below="@+id/btnLostChildren"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/btnFound" />
+
+    <Button
+        style="@android:style/Widget.DeviceDefault.Light.Button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="미아 찾음"
+        android:textSize="20dp"
+        android:id="@+id/btnFound"
+        android:onClick="btnChildrenFoundClicked"
+        android:visibility="visible"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
